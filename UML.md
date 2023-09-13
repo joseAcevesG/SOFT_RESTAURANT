@@ -9,6 +9,7 @@ classDiagram
         -direccion: string
         -mesas: Mesa[]
         -empleados: Empleado[]
+        -meseros: Mesero[]
         -menu: Menu
         -cocina: Cocina
         +agregar_mesa(): None
