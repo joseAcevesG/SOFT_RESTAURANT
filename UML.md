@@ -6,57 +6,100 @@ classDiagram
         nombre: string
         direccion: string
         mesas: Mesa[]
-        meseros: Mesero[]
-        +asignar_mesa(mesa: Mesa)
-        +asignar_mesero(mesero: Mesero)
-        meseros: Mesero[]
-
-
+        empleados: Empleado[]
+        menu: Menu
+        cocina: Cocina
+        +agregar_mesa()
+        +eliminar_mesa(mesa: Mesa)
+        +agregar_empleado(empleado: Empleado)
+        +eliminar_empleado(empleado: Empleado)
     }
-    class Mesero{
+
+    class Cocina{
+        cocineros: Cocinero[]
+        pedidos_entrada: queue:Pedido
+        pedidos_salida: list: Pedido
+        +agregar_cocinero(cocinero: Cocinero)
+        +eliminar_cocinero(cocinero: Cocinero)
+        +agregar_pedido(pedido: Pedido)
+        +tomar_pedido(pedido: Pedido, cocinero: Cocinero)
+        +servir_pedido(pedido: Pedido)
+    }
+
+    class Empleado{
         nombre: string
         apellido: string
         edad: int
         estatus: string
-        mesas: Mesa[]
+        tag: string
+    }
+
+    class Cocinero{
         pedidos: Pedido[]
-        +asignar_mesa(mesa: Mesa)
-        +tomar_pedido(mesa: Mesa)
-        +servir_pedido(mesa: Mesa)
-        +cobrar_pedido(mesa: Mesa)
+        pedidos_salida: list:Pedido
+        +preara_pedido(pedido: Pedido)
+    }
+
+    class Pedido{
+        mesa: Mesa
+        estado: string
+        articulos: Articulo[]
+        +agregar_articulo(articulo: Articulo)
+        +eliminar_articulo(articulo: Articulo)
+    }
+
+    class Menu{
+        articulos: Articulo[]
+        +agregar_articulo(articulo: Articulo)
+        +eliminar_articulo(articulo: Articulo)
     }
 
     class Mesa{
         numero: int
         capacidad: int
         mesero: Mesero
-        pedidos: Pedido[]
+        pedidos: dict:[string, Pedido[]]
         +asignar_mesero(mesero: Mesero)
         +tomar_pedido()
-        +servir_pedido()
-        +cobrar_pedido(forma_pago: FormaPago,Mmetodo_pago: MetodoPago)
-        cancelar_pedido()
+        +cancelar_articulo(identificador: string, articulo: Articulo)
+    }
+
+
+    class Articulo{
+        nombre: string
+        precio: float
+        ingredientes: string[]
+        +preparar()
+    }
+
+    class Mesero{
+        mesas: Mesa[]
+        +asignar_mesa(mesa: Mesa)
+        +tomar_pedido(mesa: Mesa)
+        +servir_pedido(mesa: Mesa, peido: Pedido)
+        +cobrar_pedido(mesa: Mesa, forma: FormaPago)
     }
 
     class FormaPago{
         <<enumeration>>
-        una_sola_exhibicion
-        individual
-
+        INDIVIDUAL
+        UNICA
     }
 
-    class MetodoPago{
-        <<enumeration>>
-        efectivo
-        tarjeta
-    }
-
-    class Menu{
-        platillos: Platillo[]
-        bebidas: Bebida[]
-        +agregar_platillo(platillo: Platillo)
-        +agregar_bebida(bebida: Bebida)
-        +eliminar_platillo(platillo: Platillo)
-        +eliminar_bebida(bebida: Bebida)
-    }
+    Establecimiento *--Menu
+    Establecimiento *--Cocina
+    Establecimiento o--Empleado
+    Menu o--Articulo
+    Pedido o--Articulo
+    Mesa *--Pedido
+    Establecimiento *--Mesa
+    Empleado <|-- Mesero
+    Pedido o--Mesa
+    Empleado <|-- Cocinero
+    Mesero <|.. FormaPago
+    Cocina o-- Cocinero
+    Mesa o-- Mesero
+    Mesero o-- Mesa
+    Cocinero o-- Pedido
+    Cocina o-- Pedido
 ```
