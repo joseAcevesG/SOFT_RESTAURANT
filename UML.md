@@ -15,6 +15,7 @@ classDiagram
         +eliminar_mesa(mesa: Mesa): None
         +agregar_empleado(empleado: Empleado) : None
         +eliminar_empleado(empleado: Empleado) : None
+        ...
     }
 
     class Cocina{
@@ -26,6 +27,7 @@ classDiagram
         +agregar_pedido(pedido: Pedido): None
         +tomar_pedido(pedido: Pedido, cocinero: Cocinero): None
         +servir_pedido(pedido: Pedido): None
+        ...
     }
 
     class Empleado{
@@ -34,12 +36,14 @@ classDiagram
         #edad: int
         #estatus: string
         #tag: string
+        ...
     }
 
     class Cocinero{
-        #pedidos: Pedido[]
-        #pedidos_salida: list:Pedido
+        -pedidos: Pedido[]
+        -pedidos_salida: list:Pedido
         +preara_pedido(pedido: Pedido): None
+        ...
     }
 
     class Pedido{
@@ -48,12 +52,14 @@ classDiagram
         -articulos: Articulo[]
         +agregar_articulo(articulo: Articulo): None
         +eliminar_articulo(articulo: Articulo): None
+        ...
     }
 
     class Menu{
         -articulos: Articulo[]
         +agregar_articulo(articulo: Articulo): None
         +eliminar_articulo(articulo: Articulo): None
+        ...
     }
 
     class Mesa{
@@ -64,6 +70,7 @@ classDiagram
         +asignar_mesero(mesero: Mesero): None
         +tomar_pedido(identificador: string, articulos: Articulo[]): None
         +cancelar_articulo(identificador: string, articulo: Articulo): None
+        ...
     }
 
 
@@ -72,6 +79,7 @@ classDiagram
         -precio: float
         -ingredientes: string[]
         +preparar(): None
+        ...
     }
 
     class Mesero{
@@ -79,7 +87,10 @@ classDiagram
         +asignar_mesa(mesa: Mesa): None
         +tomar_pedido(mesa: Mesa): None
         +servir_pedido(mesa: Mesa, peido: Pedido): None
-        +cobrar_pedido(mesa: Mesa, forma: FormaPago): None
+        -calcularCuenta(pedido: Pedido): float
+        +cobrar_mesa(mesa: Mesa, forma: FormaPago): dict:[string, float]
+        +cobrar_persona(pedidos: Pedido[]): float
+        ...
     }
 
     class FormaPago{
