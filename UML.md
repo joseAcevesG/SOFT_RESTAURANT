@@ -19,7 +19,7 @@ classDiagram
         +agregar_mesero(mesero: Mesero): None
         +eliminar_mesero(mesero: Mesero): None
         +repartir_propinas(): float
-        +demanda_articulo(menu: Menu): dict:[Articulo, int]
+        +demanda_articulo(): dict:[Articulo, int]
         +mesas_disponibles(): int
         +ingresos(): float
         ...
