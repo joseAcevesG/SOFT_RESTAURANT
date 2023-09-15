@@ -16,6 +16,9 @@ classDiagram
         +eliminar_mesa(mesa: Mesa): None
         +agregar_empleado(empleado: Empleado) : None
         +eliminar_empleado(empleado: Empleado) : None
+        +agregar_mesero(mesero: Mesero): None
+        +eliminar_mesero(mesero: Mesero): None
+        repartir_propinas(): None
         ...
     }
 
