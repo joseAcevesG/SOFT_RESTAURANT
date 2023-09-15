@@ -18,7 +18,7 @@ classDiagram
         +eliminar_empleado(empleado: Empleado) : None
         +agregar_mesero(mesero: Mesero): None
         +eliminar_mesero(mesero: Mesero): None
-        repartir_propinas(): None
+        repartir_propinas(): float
         ...
     }
 
