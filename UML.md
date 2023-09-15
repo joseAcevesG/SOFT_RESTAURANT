@@ -81,6 +81,8 @@ classDiagram
 
     class Mesero{
         -mesas: Mesa[]
+        -id_cocina: int
+        +aisgnar_cocina(id_cocina: int): None
         +asignar_mesa(mesa: Mesa): None
         +tomar_pedido(mesa: Mesa): None
         +servir_pedido(mesa: Mesa, peido: Pedido): None
