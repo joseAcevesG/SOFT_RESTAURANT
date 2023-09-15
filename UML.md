@@ -18,7 +18,10 @@ classDiagram
         +eliminar_empleado(empleado: Empleado) : None
         +agregar_mesero(mesero: Mesero): None
         +eliminar_mesero(mesero: Mesero): None
-        repartir_propinas(): float
+        +repartir_propinas(): float
+        +demanda_articulo(menu: Menu): dict:[Articulo, int]
+        +mesas_disponibles(): int
+        +ingresos(): float
         ...
     }
 
@@ -63,6 +66,8 @@ classDiagram
     class Mesa{
         -numero: int
         -capacidad: int
+        -cantidad_personas: int
+        -ocupada: bool
         -mesero: Mesero
         -pedidos: dict:[string, Pedido[]]
         +asignar_mesero(mesero: Mesero): None
@@ -76,6 +81,7 @@ classDiagram
         -nombre: string
         -precio: float
         -ingredientes: string[]
+        -veces_pedido: int
         +preparar(): None
         ...
     }
