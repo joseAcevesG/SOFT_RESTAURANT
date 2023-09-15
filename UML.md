@@ -49,6 +49,7 @@ classDiagram
         -articulos: Articulo[]
         +agregar_articulo(articulo: Articulo): None
         +eliminar_articulo(articulo: Articulo): None
+        +cambiar_estado(estado: string): None
         ...
     }
 
