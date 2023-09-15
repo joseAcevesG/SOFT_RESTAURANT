@@ -23,14 +23,14 @@ classDiagram
     }
 
     class Cocina{
-        -cocineros: Cocinero[]
+        -cocineros: Empleado[]
         -pedidos_entrada: queue:Pedido
         -pedidos_salida: list: Pedido
         +agregar_cocinero(cocinero: Cocinero): None
         +eliminar_cocinero(cocinero: Cocinero): None
         +agregar_pedido(pedido: Pedido): None
-        +tomar_pedido(pedido: Pedido, cocinero: Cocinero): None
         +servir_pedido(pedido: Pedido): None
+        +preara_pedido(pedido: Pedido): None
         ...
     }
 
@@ -40,13 +40,6 @@ classDiagram
         #edad: int
         #estatus: string
         #tag: string
-        ...
-    }
-
-    class Cocinero{
-        -pedidos: Pedido[]
-        -pedidos_salida: list:Pedido
-        +preara_pedido(pedido: Pedido): None
         ...
     }
 
@@ -114,9 +107,8 @@ classDiagram
     Pedido o--Mesa
     Empleado <|-- Cocinero
     Mesero <|.. FormaPago
-    Cocina o-- Cocinero
+    Cocina o-- Empleado
     Mesa o-- Mesero
     Mesero o-- Mesa
-    Cocinero o-- Pedido
     Cocina o-- Pedido
 ```
