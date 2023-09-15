@@ -26,8 +26,8 @@ classDiagram
         -cocineros: Empleado[]
         -pedidos_entrada: queue:Pedido
         -pedidos_salida: list: Pedido
-        +agregar_cocinero(cocinero: Cocinero): None
-        +eliminar_cocinero(cocinero: Cocinero): None
+        +agregar_cocinero(cocinero: Empledo): None
+        +eliminar_cocinero(cocinero: Empleado): None
         +agregar_pedido(pedido: Pedido): None
         +servir_pedido(pedido: Pedido): None
         +preara_pedido(pedido: Pedido): None
@@ -108,7 +108,6 @@ classDiagram
     Establecimiento *--Mesa
     Empleado <|-- Mesero
     Pedido o--Mesa
-    Empleado <|-- Cocinero
     Mesero <|.. FormaPago
     Cocina o-- Empleado
     Mesa o-- Mesero
