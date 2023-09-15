@@ -43,43 +43,6 @@ classDiagram
         ...
     }
 
-    class Pedido{
-        -mesa: Mesa
-        -estado: string
-        -articulos: Articulo[]
-        +agregar_articulo(articulo: Articulo): None
-        +eliminar_articulo(articulo: Articulo): None
-        +cambiar_estado(estado: string): None
-        ...
-    }
-
-    class Menu{
-        -articulos: Articulo[]
-        +agregar_articulo(articulo: Articulo): None
-        +eliminar_articulo(articulo: Articulo): None
-        ...
-    }
-
-    class Mesa{
-        -numero: int
-        -capacidad: int
-        -mesero: Mesero
-        -pedidos: dict:[string, Pedido[]]
-        +asignar_mesero(mesero: Mesero): None
-        +tomar_pedido(identificador: string, articulos: Articulo[]): None
-        +cancelar_articulo(identificador: string, articulo: Articulo): None
-        ...
-    }
-
-
-    class Articulo{
-        -nombre: string
-        -precio: float
-        -ingredientes: string[]
-        +preparar(): None
-        ...
-    }
-
     class Mesero{
         -mesas: Mesa[]
         -id_cocina: int
@@ -97,6 +60,42 @@ classDiagram
         <<enumeration>>
         INDIVIDUAL
         UNICA
+    }
+
+    class Mesa{
+        -numero: int
+        -capacidad: int
+        -mesero: Mesero
+        -pedidos: dict:[string, Pedido[]]
+        +asignar_mesero(mesero: Mesero): None
+        +tomar_pedido(identificador: string, articulos: Articulo[]): None
+        +cancelar_articulo(identificador: string, articulo: Articulo): None
+        ...
+    }
+
+    class Menu{
+        -articulos: Articulo[]
+        +agregar_articulo(articulo: Articulo): None
+        +eliminar_articulo(articulo: Articulo): None
+        ...
+    }
+
+    class Pedido{
+        -mesa: Mesa
+        -estado: string
+        -articulos: Articulo[]
+        +agregar_articulo(articulo: Articulo): None
+        +eliminar_articulo(articulo: Articulo): None
+        +cambiar_estado(estado: string): None
+        ...
+    }
+
+    class Articulo{
+        -nombre: string
+        -precio: float
+        -ingredientes: string[]
+        +preparar(): None
+        ...
     }
 
     Establecimiento *--Menu
