@@ -71,6 +71,7 @@ classDiagram
         -mesero: Mesero
         -pedidos: dict:[string, Pedido[]]
         +asignar_mesero(mesero: Mesero): None
+        +ocupar_mesa(cantidad_personas: int): None
         +tomar_pedido(identificador: string, articulos: Articulo[]): None
         +cancelar_articulo(identificador: string, articulo: Articulo): None
         ...
