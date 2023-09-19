@@ -66,9 +66,8 @@ classDiagram
         -cantidad_personas: int
         -ocupada: bool
         -numero: int
-        -capacidad: int
         -mesero: Mesero
-        -pedidos: dict:[string, Pedido[]]
+        -pedidos: dict:[string:identificador, int:ID]
         +asignar_mesero(mesero: Mesero): None
         +ocupar_mesa(cantidad_personas: int): None
         +liberar_mesa(): None
