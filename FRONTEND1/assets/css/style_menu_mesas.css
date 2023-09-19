@@ -1,0 +1,898 @@
+.POS-menu {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.POS-menu .div {
+    background-color: #ffffff;
+    width: 1512px;
+    height: 982px;
+    position: relative;
+}
+
+.POS-menu .image {
+    position: absolute;
+    width: 489px;
+    height: 200px;
+    top: 756px;
+    left: 519px;
+    object-fit: cover;
+}
+
+.POS-menu .frame {
+    position: fixed;
+    width: 1198px;
+    height: 508px;
+    top: 162px;
+    left: 169px;
+}
+
+.POS-menu .overlap {
+    top: 212px;
+    left: 1083px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .text-wrapper {
+    position: absolute;
+    width: 41px;
+    top: 23px;
+    left: 9px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.POS-menu .ellipse {
+    top: 282px;
+    left: 1103px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-2 {
+    top: 232px;
+    left: 1153px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-3 {
+    top: 232px;
+    left: 1053px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-4 {
+    top: 182px;
+    left: 1103px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-group {
+    top: 396px;
+    left: 1083px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-5 {
+    top: 466px;
+    left: 1103px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-6 {
+    top: 416px;
+    left: 1153px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-7 {
+    top: 416px;
+    left: 1053px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-8 {
+    top: 366px;
+    left: 1103px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .div-wrapper {
+    top: 396px;
+    left: 837px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-9 {
+    top: 466px;
+    left: 857px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-10 {
+    top: 416px;
+    left: 907px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-11 {
+    top: 416px;
+    left: 807px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-12 {
+    top: 366px;
+    left: 857px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-2 {
+    top: 396px;
+    left: 560px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-13 {
+    top: 466px;
+    left: 580px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-14 {
+    top: 416px;
+    left: 630px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-15 {
+    top: 416px;
+    left: 530px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-16 {
+    top: 366px;
+    left: 580px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-3 {
+    top: 396px;
+    left: 292px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-17 {
+    top: 466px;
+    left: 312px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-18 {
+    top: 416px;
+    left: 362px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-19 {
+    top: 416px;
+    left: 262px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-20 {
+    top: 366px;
+    left: 312px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-4 {
+    top: 396px;
+    left: 31px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-21 {
+    top: 466px;
+    left: 51px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-22 {
+    top: 416px;
+    left: 101px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-23 {
+    top: 416px;
+    left: 1px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-24 {
+    top: 366px;
+    left: 51px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-5 {
+    top: 218px;
+    left: 31px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-25 {
+    top: 288px;
+    left: 51px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-26 {
+    top: 238px;
+    left: 101px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-27 {
+    top: 238px;
+    left: 1px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-28 {
+    top: 188px;
+    left: 51px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-6 {
+    top: 33px;
+    left: 31px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-29 {
+    top: 103px;
+    left: 51px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-30 {
+    top: 53px;
+    left: 101px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-31 {
+    top: 53px;
+    left: 1px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-32 {
+    top: 3px;
+    left: 51px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-7 {
+    top: 33px;
+    left: 292px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-33 {
+    top: 103px;
+    left: 312px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-34 {
+    top: 53px;
+    left: 362px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-35 {
+    top: 53px;
+    left: 262px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-36 {
+    top: 3px;
+    left: 312px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-8 {
+    top: 33px;
+    left: 560px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-37 {
+    top: 103px;
+    left: 580px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-38 {
+    top: 53px;
+    left: 630px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-39 {
+    top: 53px;
+    left: 530px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-40 {
+    top: 3px;
+    left: 580px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-9 {
+    top: 33px;
+    left: 837px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-41 {
+    top: 103px;
+    left: 857px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-42 {
+    top: 53px;
+    left: 907px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-43 {
+    top: 53px;
+    left: 807px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-44 {
+    top: 3px;
+    left: 857px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .overlap-10 {
+    top: 33px;
+    left: 1083px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #d8e6e9;
+    border-radius: 35px;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-45 {
+    top: 103px;
+    left: 1103px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-46 {
+    top: 53px;
+    left: 1153px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-47 {
+    top: 53px;
+    left: 1053px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .ellipse-48 {
+    top: 3px;
+    left: 1103px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d89f65;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.POS-menu .top-section {
+    position: fixed;
+    width: 1512px;
+    height: 97px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.POS-menu .separator {
+    position: absolute;
+    width: 1512px;
+    height: 1px;
+    top: 96px;
+    left: 0;
+    object-fit: cover;
+}
+
+.POS-menu .top {
+    position: absolute;
+    width: 1448px;
+    height: 58px;
+    top: 20px;
+    left: 35px;
+}
+
+.POS-menu .lsft-side {
+    position: absolute;
+    width: 555px;
+    height: 58px;
+    top: 0;
+    left: -8px;
+}
+
+.POS-menu .POS {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Quicksand-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.POS-menu .span {
+    color: #3d8493;
+}
+
+.POS-menu .text-wrapper-2 {
+    color: #d89f65;
+}
+
+.POS-menu .text-wrapper-3 {
+    color: #4a5c2f;
+}
+
+.POS-menu .right-side {
+    position: absolute;
+    width: 419px;
+    height: 58px;
+    top: 0;
+    left: 1029px;
+}
+
+.POS-menu .date-top {
+    position: absolute;
+    width: 223px;
+    height: 22px;
+    top: 18px;
+    left: 0;
+}
+
+.POS-menu .vector {
+    position: absolute;
+    width: 16px;
+    height: 18px;
+    top: 2px;
+    left: 9px;
+}
+
+.POS-menu .text-wrapper-4 {
+    position: absolute;
+    top: 2px;
+    left: 32px;
+    font-family: "Quicksand-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.POS-menu .button-add-table {
+    position: absolute;
+    width: 175px;
+    height: 58px;
+    top: 0;
+    left: 244px;
+    background-color: var(--blue-blue-200);
+    border-radius: 10px;
+}
+
+.POS-menu .group {
+    position: relative;
+    width: 116px;
+    height: 20px;
+    top: 19px;
+    left: 31px;
+}
+
+.POS-menu .add {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 1px;
+    left: 0;
+}
+
+.POS-menu .add-table {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    font-family: "Quicksand-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--green-green-600);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
