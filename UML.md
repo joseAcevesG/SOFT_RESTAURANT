@@ -52,7 +52,7 @@ classDiagram
         +servir_pedido(mesa: Mesa, peido: Pedido): None
         -calcularCuenta(pedido: Pedido): float
         +cobrar_mesa(mesa: Mesa, forma: FormaPago): dict:[string, float]
-        +cobrar_persona(pedidos: Pedido[]): float
+        +cobrar_persona(identificador: string): float
         ...
     }
 
@@ -96,6 +96,7 @@ classDiagram
     class Articulo{
         -nombre: string
         -precio: float
+        -veces_pedido: int
         -ingredientes: string[]
         +preparar(): None
         ...
