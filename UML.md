@@ -96,8 +96,8 @@ classDiagram
     class Articulo{
         -nombre: string
         -precio: float
-        -veces_pedido: int
         -ingredientes: string[]
+        -veces_pedido: int
         +preparar(): None
         ...
     }
